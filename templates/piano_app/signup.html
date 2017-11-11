@@ -1,6 +1,123 @@
 <!DOCTYPE html>
 {% extends "piano_app/base.html" %}
-    {% block body_block%}
+{% block body_block%}
+    <h1>Join</h1>
+	<form class="" action="thankyou.html" method="post">
+		<div class="form-group">
+			<label for="username">Username:</label><br>
+			<input id="username" type="text" name="" placeholder="Username" required>
+		</div>
+		<div class="form-group">
+			<label for="password">Password:</label><br>
+			<input id="password" type="password" name="" required>
+		</div>
 
+		<div class="form-group">
+			<label for="first">First Name:</label><br>
+		    <input id="first" type="text" name="" placeholder="First Name" required>
+		</div>
+		<div class="form-group">
+            <label for="last">Last Name:</label><br>
+            <input id="last" type="text" name="" placeholder="Last Name" required><br>
+		</div>
+		<div class="form-group">
+			<label for="date">Date of birth:</label><br>
+			<input id="date" type="date" value="2017-06-01" placeholder="2017-06-01"><br>
+		</div>
+		<div class="form-group">
+			<label for="sex">Sex:</label><br>
+			<select class="" name="sex" id="sex">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="decline">Decline to identify</option>
+			</select><br>
+		</div>
+		<div class="form-group">
+			<label for="school">School Name:</label><br>
+            <input id="school" type="text" name="" placeholder="School Name"><br>
+		</div>
+		<div class="form-group">
+			<label for="grade">Grade:</label><br>
+			<select class="" name="grade", id="grade">
+				<option value="prek">Pre K</option>
+				<option value="k">Kindergarten</option>
+				<option value="1">First Grade</option>
+				<option value="2">Second Grade</option>
+				<option value="3">Third Grade</option>
+				<option value="4">Forth Grade</option>
+				<option value="5">Fifth Grade</option>
+				<option value="6">Sixth Grade</option>
+				<option value="7">Seventh Grade</option>
+				<option value="8">Eighth Grade</option>
+				<option value="9">Nineth Grade</option>
+				<option value="10">Tenth Grade</option>
+				<option value="11">Eleventh Grade</option>
+				<option value="12">Twelfth Grade</option>
+				<option value="adult">Adult</option>
+			</select><br>
+		</div>
+		<div class="form-group">
+			<label for="address1">Address line 1:</label><br>
+            <input id="address1" type="text" name="" placeholder="Address line 1"><br>
+		</div>
+		<div class="form-group">
+			<label for="address2">Address line 2:</label><br>
+			<input id="address2" type="text" name="" placeholder="Address line 2"><br>
+		</div>
+		<div class="form-group">
+			<label for="city">City:</label><br>
+			<input id="city" type="text" name="" placeholder="City"><br>
+		</div>
+		<div class="form-group">
+			<label for="zip">Zip:</label><br>
+			<input id="zip" type="text" name="" pattern="[0-9]{5}" placeholder="Zip"><br>
+		</div>
+		<div class="form-group">
+			<label for="phone">Phone:</label><br>
+            <input id="phone" type="tel" name="" placeholder="Phone Number" required><br>
+		</div>
+		<div class="form-group">
+			<label for="mail">Email:</label><br>
+            <input id="mail" type="email" name="" placeholder="Email" required><br>
+		</div>
+		<div class="form-group">
+			<label for="volunteer">Volunteer:</label><br>
+			<textarea id="volunteer" rows="4" cols="50" placeholder="Previous Volunteer Experience"></textarea><br>
+		</div>
+		<div class="form-group">
+			<label for="interest">Interest in Piano Village:</label><br>
+			<textarea id="interest" rows="4" cols="50" placeholder="Tell us about your interest in Piano Village"></textarea><br>
+		</div>
+		<div class="form-group">
+			<label for="goals">Goals for service to the community:</label><br>
+			<textarea id="goals" rows="4" cols="50" placeholder="Tell us about your goals for service to the community"></textarea><br>
+		</div>
+		<div class="form-group">
+			<label for="parent">Parent Name:</label><br>
+            <input id="parent" type="text" name="" placeholder="Parent Name"><br>
+		</div>
+		<div class="form-group">
+			<label for="parentNumber">Parent's Number:</label><br>
+			<input id="parentNumber" type="text" name="" placeholder="Parent's Number:"><br>
+		</div>
+		<div class="form-group">
+			<label for="relationship">Relationship:</label><br>
+			<input id="relationship" type="text" name="" placeholder="Relationship"><br>
+		</div>
+		<div class="form-group">
+			<label for="hear">How did you hear about us:</label><br>
+			<select class="" id="hear" name="hear">
+				<option value="friends">Friend</option>
+				<option value="parentOption">Parent</option>
+				<option value="website">Website</option>
+				<option value="media">Media</option>
+				<option value="other">Other</option>
+			</select><br><br>
+		</div>
+		<div class="form-group">
+			<small>We will not share this info.</small><br>
+			<input type="submit" name="" value="Submit"><br>
+		</div>
+	</form>
 
-    {% endblock %}
+{% endblock %}
