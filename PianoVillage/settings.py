@@ -24,9 +24,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 SECRET_KEY = 'x-!%*08s%&7ianc%lh=8b0a9q3z4do83l8-^xqap6e2q&*e39+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['schwartz214.pythonanywhere.com']
+ALLOWED_HOSTS = ['schwartz214.pythonanywhere.com','127.0.0.1']
 
 
 # Application definition

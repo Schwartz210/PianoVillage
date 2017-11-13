@@ -20,5 +20,7 @@ from piano_app import views
 urlpatterns = [
     url(r'^$',views.index,name='index'),
     url(r'^admin/', admin.site.urls),
-    url(r'^piano_app/',include('piano_app.urls'))
+    url(r'^piano_app/',include('piano_app.urls')),
+    url(r'^logout/$',views.user_logout,name='logout'),
+
 ]
